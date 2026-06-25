@@ -3,6 +3,7 @@ import API from "../services/api";
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login=()=>{
     const navigate=useNavigate();
@@ -56,6 +57,22 @@ Login
         >
           Login
         </button>
+        <button
+  type="submit"
+  className="bg-green-500 text-white w-full p-2"
+>
+  Login
+</button>
+
+<p className="text-center mt-4">
+  New user?{" "}
+  <Link
+    to="/register"
+    className="text-blue-600 font-semibold"
+  >
+    Register Here
+  </Link>
+</p>
             </form>
         </div>
     )

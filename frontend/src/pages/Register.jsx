@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 import API from "../services/api";
 import toast from "react-hot-toast";
-
+import { Link } from "react-router-dom";
   const Register=()=>{
     const navigate=useNavigate();
     const[formData,setFormData]=useState({
@@ -56,6 +56,22 @@ return(
         />
 <button type="submit"
 className="bg-blue-500 text-white w-full p-2">Register</button>
+<button
+  type="submit"
+  className="bg-blue-500 text-white w-full p-2"
+>
+  Register
+</button>
+
+<p className="text-center mt-4">
+  Already have an account?{" "}
+  <Link
+    to="/login"
+    className="text-blue-600 font-semibold"
+  >
+    Login
+  </Link>
+</p>
         </form>
 
     </div>
