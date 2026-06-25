@@ -56,12 +56,7 @@ return(
         />
 <button type="submit"
 className="bg-blue-500 text-white w-full p-2">Register</button>
-<button
-  type="submit"
-  className="bg-blue-500 text-white w-full p-2"
->
-  Register
-</button>
+
 
 <p className="text-center mt-4">
   Already have an account?{" "}

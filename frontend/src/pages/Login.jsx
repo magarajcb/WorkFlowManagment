@@ -57,12 +57,7 @@ Login
         >
           Login
         </button>
-        <button
-  type="submit"
-  className="bg-green-500 text-white w-full p-2"
->
-  Login
-</button>
+       
 
 <p className="text-center mt-4">
   New user?{" "}
